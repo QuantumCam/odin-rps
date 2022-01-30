@@ -12,25 +12,26 @@ function game(x) {
     }
 
     function results {
-        if (condition1) {
+        if (playerSelection == computerSelection) {
             //Tie
-        } else if (condition2) {
-            if (condition1) {
+        } else if (playerSelection(rock)) {
+            if (computerSelection(scissors)) {
                 //You win
             } else {
                 //You lose
             }
-        } else if (condition2) {
-            if (condition1) {
+        } else if (playerSelection(paper)) {
+            if (computerSelection(rock)) {
                 //You win
             } else {
                 //You lose
-            } 
-            else if (condition2) {
-                if (condition1) {
-                    //You win
-                } else {
-                    //You lose
-                }
+            }
+        } else if (playerSelection(scissors)) {
+            if (computerSelection(paper)) {
+                //You win
+            } else {
+                //You lose
             }
         }
+    }
+}
