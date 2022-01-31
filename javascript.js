@@ -1,17 +1,19 @@
-function game(x) {
+function game(choice) {
     function playRound(playerSelection, computerSelection) {
-        function playerSelection() {
-            let x = y
+        function playerSelection(choice) {
+            return choice
+            //make sure this is case-insensitive
         }
 
         function computerSelection {
             let options = ['Rock', 'Paper', 'Scissors'];
             let choices = options[Math.floor(Math.random() * options.length)]
-            //have choices = z
+            return choices
         }
     }
 
     function results {
+        //should return the results of the game
         if (playerSelection == computerSelection) {
             //Tie
         } else if (playerSelection(rock)) {
@@ -33,5 +35,6 @@ function game(x) {
                 //You lose
             }
         }
+        return results
     }
 }
