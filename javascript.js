@@ -1,40 +1,17 @@
 function game(choice) {
-    function playRound(playerSelection, computerSelection) {
-        function playerSelection(choice) {
-            return choice
-            //make sure this is case-insensitive
-        }
-
-        function computerSelection {
-            let options = ['Rock', 'Paper', 'Scissors']; // Fire = Rock, Water = Paper, Grass = Scissors
-            let choices = options[Math.floor(Math.random() * options.length)]
+    function computerSelection {
+            let options = ['Fire', 'Water', 'Grass']; // Fire = Rock, Water = Paper, Grass = Scissors
+            let choices = options[Math.floor(Math.random() * options.length)];
             return choices
         }
-    }
 
-    function results {
-        //should return the results of the game
+    function playRound (playerSelection, computerSelection) {
         if (playerSelection == computerSelection) {
-            //Tie
-        } else if (playerSelection(rock)) {
-            if (computerSelection(scissors)) {
-                //You win
-            } else {
-                //You lose
-            }
-        } else if (playerSelection(paper)) {
-            if (computerSelection(rock)) {
-                //You win
-            } else {
-                //You lose
-            }
-        } else if (playerSelection(scissors)) {
-            if (computerSelection(paper)) {
-                //You win
-            } else {
-                //You lose
-            }
+          console.log ('Tie!');
+        } else if (playerSelection > computerSelection) {
+          console.log ('You win!');
+        } else {
+          console.log ('You lose!');
         }
-        return results
-    }
+      }
 }
