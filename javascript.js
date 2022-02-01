@@ -6,7 +6,7 @@ function game(choice) {
         }
 
         function computerSelection {
-            let options = ['Rock', 'Paper', 'Scissors'];
+            let options = ['Rock', 'Paper', 'Scissors']; // Fire = Rock, Water = Paper, Grass = Scissors
             let choices = options[Math.floor(Math.random() * options.length)]
             return choices
         }
