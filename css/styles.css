@@ -8,3 +8,7 @@ body {
 .bts {
     display:flex ;
 }
+
+.main-title {
+    display:flex;
+}
