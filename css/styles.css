@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: rgb(160, 158, 158);
     font-family: 'Roboto', sans-serif;
@@ -7,8 +14,29 @@ body {
 
 .btns {
     display:flex ;
+    width: 95px;
+    background: rgb(0, 183, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
 }
 
 .main-title {
     display:flex;
+}
+
+#rock {
+    display:flex;
+}
+
+#paper {
+    display:flex;
+}
+
+#scissors {
+    display:flex;
+    
 }
