@@ -42,3 +42,18 @@ btns.addEventListener('click', (event) => {
 
   console.dir(event.target.id);
 })
+
+var myRock = document.getElementByID('rock');
+myElem.onclick = function() {
+	//do stuff
+}
+
+var myPaper = document.getElementByID('paper');
+myElem.onclick = function() {
+	//do stuff
+}
+
+var myScissors = document.getElementByID('scissors');
+myElem.onclick = function() {
+	//do stuff
+}
