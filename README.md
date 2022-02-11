@@ -1,4 +1,4 @@
-# odin-rps
+# Rock Paper Scissors
 This Rock, Paper Scissors game is supposed to demonstrate some foundational concepts of JavaScript such as functions, arrays, loops, etc. 
 This assignment also touches on DOM manipulation.
 
