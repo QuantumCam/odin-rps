@@ -1,4 +1,22 @@
 
+const rock = document.getElementById('rock');
+const paper = document.getElementById('paper');
+const scissors = document.getElementById('scissors');
+
+function playerSelection () {
+rock.addEventListener('click', function(e) {
+    console.log('rock');
+})
+
+paper.addEventListener('click', function(e) {
+    console.log('paper');
+})
+
+scissors.addEventListener('click', function(e) {
+    console.log('scissors');
+})
+}
+
 function computerSelection () {
     let options = ['Rock', 'Paper', 'Scissors'];
     let choices = options[Math.floor(Math.random() * options.length)];
@@ -6,7 +24,7 @@ function computerSelection () {
 } //This function works properly, no further testing needed
 
 
-let playerSelection = ['Rock', 'Paper', 'Scissors'];
+// let playerSelection = ['Rock', 'Paper', 'Scissors'];
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
@@ -26,20 +44,7 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-const addScore = ['1 point for your opponent!', '1 point for you!', 'Tie!'];
+
 
 let myScore = 0;
-let theirScore = 0
-
-
-
-const btns = document.getElementById("btns");
-
-btns.addEventListener('click', (event) => {
-  const isButton = event.target.nodeName === 'BUTTON';
-  if (!isButton) {
-    return;
-  }
-
-  console.dir(event.target.id);
-})
+let theirScore = 0;
