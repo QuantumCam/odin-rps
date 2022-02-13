@@ -28,7 +28,7 @@ function playRound(playerSelection, computerSelection) {
 const addScore = ['1 point for your opponent!', '1 point for you!', 'Tie!'];
 
 let myScore = 0;
-let theirScore = 0
+let theirScore = 0;
 
 
 /*
