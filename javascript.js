@@ -3,19 +3,19 @@ const rock = document.getElementById('rock');
 const paper = document.getElementById('paper');
 const scissors = document.getElementById('scissors');
 
-function playerSelection () {
+
 rock.addEventListener('click', function(e) {
-    console.log('rock');
+    console.log('Rock');
 })
 
 paper.addEventListener('click', function(e) {
-    console.log('paper');
+    console.log('Paper');
 })
 
 scissors.addEventListener('click', function(e) {
-    console.log('scissors');
+    console.log('Scissors');
 })
-}
+
 
 function computerSelection () {
     let options = ['Rock', 'Paper', 'Scissors'];
@@ -24,7 +24,7 @@ function computerSelection () {
 } //This function works properly, no further testing needed
 
 
-// let playerSelection = ['Rock', 'Paper', 'Scissors'];
+ let playerSelection = ['Rock', 'Paper', 'Scissors'];
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
