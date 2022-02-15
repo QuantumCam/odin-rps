@@ -17,6 +17,7 @@ scissors.addEventListener('click', function(e) {
 })
 
 
+
 function computerSelection () {
     let options = ['Rock', 'Paper', 'Scissors'];
     let choices = options[Math.floor(Math.random() * options.length)];
@@ -24,8 +25,11 @@ function computerSelection () {
 } //This function works properly, no further testing needed
 
 
+//I want to figure out how to have the HTML buttons connect with this declaration. 
  let playerSelection = ['Rock', 'Paper', 'Scissors'];
 
+
+ //Once I have the above problem figured out, we can have it go through this parameter.
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
         console.log('Tie!');
@@ -46,5 +50,5 @@ function playRound(playerSelection, computerSelection) {
 
 
 
-let myScore = 0;
-let theirScore = 0;
+let playerScore = 0;
+let computerScore = 0;
