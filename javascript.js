@@ -1,48 +1,48 @@
-const rock = document.getElementById('rock');
-const paper = document.getElementById('paper');
-const scissors = document.getElementById('scissors');
+const fire = document.getElementById('fire');
+const grass = document.getElementById('grass');
+const water = document.getElementById('water');
 
 
-rock.addEventListener('click', function(e) {
-    console.log('Rock');
+fire.addEventListener('click', function(e) {
+    console.log('fire');
 })
 
-paper.addEventListener('click', function(e) {
-    console.log('Paper');
+grass.addEventListener('click', function(e) {
+    console.log('grass');
 })
 
-scissors.addEventListener('click', function(e) {
-    console.log('Scissors');
+water.addEventListener('click', function(e) {
+    console.log('water');
 })
 
 
 
 function computerSelection () {
-    let options = ['Rock', 'Paper', 'Scissors'];
+    let options = ['fire', 'grass', 'water'];
     let choices = options[Math.floor(Math.random() * options.length)];
     return choices;
 } //This function works properly, no further testing needed
 
 
 //I want to figure out how to have the HTML buttons connect with this declaration. 
- let playerSelection = ['Rock', 'Paper', 'Scissors'];
+ let playerSelection = ['fire', 'grass', 'water'];
 
 
  //Once I have the above problem figured out, we can have it go through this parameter.
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
         console.log('Tie!');
-    } else if (playerSelection == 'Rock' && computerSelection == 'Scissors') {
+    } else if (playerSelection == 'fire' && computerSelection == 'water') {
         console.log('1 point for you!');
-    } else if (playerSelection == 'Rock' && computerSelection == 'Paper') {
+    } else if (playerSelection == 'fire' && computerSelection == 'grass') {
         console.log('1 point for your opponent!');
-    } else if (playerSelection == 'Paper' && computerSelection == 'Rock') {
+    } else if (playerSelection == 'grass' && computerSelection == 'fire') {
         console.log('1 point for you!');
-    } else if (playerSelection == 'Paper' && computerSelection == 'Scissors') {
+    } else if (playerSelection == 'grass' && computerSelection == 'water') {
         console.log('1 point for your opponent!');
-    } else if (playerSelection == 'Scissors' && computerSelection == 'Paper') {
+    } else if (playerSelection == 'water' && computerSelection == 'grass') {
         console.log('1 point for you!');
-    } else if (playerSelection == 'Scissors' && computerSelection == 'Rock') {
+    } else if (playerSelection == 'water' && computerSelection == 'fire') {
         console.log('1 point for your opponent!');
     }
 }
