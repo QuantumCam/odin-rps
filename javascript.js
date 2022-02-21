@@ -1,6 +1,6 @@
-const fire = document.getElementById('fire');
-const grass = document.getElementById('grass');
-const water = document.getElementById('water');
+const fire = document.getElementById('fire'); //rock
+const grass = document.getElementById('grass'); //paper
+const water = document.getElementById('water'); //scissors
 
 
 fire.addEventListener('click', function(e) {
