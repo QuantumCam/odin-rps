@@ -12,6 +12,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.pokemon-choices {
+    display: flex;
+}
+
 .btns {
     display:flex ;
     width: 95px;
