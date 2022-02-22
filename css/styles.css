@@ -7,12 +7,24 @@
     margin: 0;
 }
 
+h1 {
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+}
+
 body {
-    background-color: rgb(160, 158, 158);
+    background-color:	#F6CF57; /*Pikachu Yellow ;)*/
     font-family: 'Roboto', sans-serif;
 }
 
 .pokemon-choices {
+    display: flex;
+}
+
+.starters {
     display: flex;
 }
 
