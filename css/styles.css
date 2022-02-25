@@ -11,6 +11,10 @@ h1 {
     text-align: center;
 }
 
+.scoreboard {
+    border: 5px solid rgb(0, 0, 0);
+}
+
 .intro {
     display: flex;
 }
