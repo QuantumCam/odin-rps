@@ -13,6 +13,7 @@ h1 {
 
 .scoreboard {
     border: 5px solid rgb(0, 0, 0);
+    display:flex;
 }
 
 .intro {
@@ -22,6 +23,7 @@ h1 {
 body {
     background-color:	#F6CF57; /*Pikachu Yellow ;)*/
     font-family: 'Roboto', sans-serif;
+    display:flex;
 }
 
 .pokemon-choices {
