@@ -11,6 +11,10 @@ h1 {
     text-align: center;
 }
 
+.pokeball-header {
+    display:flex;
+}
+
 .scoreboard {
     border: 5px solid rgb(0, 0, 0);
     display:flex;
