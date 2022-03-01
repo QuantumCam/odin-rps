@@ -9,6 +9,7 @@
 
 h1 {
     text-align: center;
+    display: flex;
 }
 
 .pokeball-header {
@@ -65,4 +66,9 @@ body {
 #water {
     display:flex;
     
+}
+
+img {
+    width: 500px;
+    height: 500px;
 }
