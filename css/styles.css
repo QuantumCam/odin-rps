@@ -7,26 +7,73 @@
     margin: 0;
 }
 
+h1 {
+    text-align: center;
+   
+}
+
+.header {
+   margin-right: 40px; 
+}
+
+.pokeball-header {
+    margin-top: 50px;
+    margin-left: 600px;
+}
+
+.scoreboard {
+    border: 5px solid rgb(0, 0, 0);
+    
+}
+
+/*.intro {
+    
+}
+*/
 body {
-    background-color: rgb(160, 158, 158);
+    background-color:	#F6CF57; /*Pikachu Yellow ;)*/
     font-family: 'Roboto', sans-serif;
+    
 }
 
+.pokemon-choices {
+    display: flex;
+}
 
- .btns {
-     display: flex;
- }
+.starters {
+    display: flex;
+}
 
+.btns {
+    display:flex ;
+    width: 95px;
+    background: rgb(0, 183, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+}
 
-#rock {
+.main-title {
     display:flex;
 }
 
-#paper {
+#fire {
     display:flex;
 }
 
-#scissors {
+#grass {
+    display:flex;
+}
+
+#water {
     display:flex;
     
+}
+
+img {
+    width: 500px;
+    height: 500px;
 }
