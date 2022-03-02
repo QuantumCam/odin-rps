@@ -9,26 +9,31 @@
 
 h1 {
     text-align: center;
-    display: flex;
+   
+}
+
+.header {
+   margin-right: 40px; 
 }
 
 .pokeball-header {
-    display:flex;
+    margin-top: 50px;
+    margin-left: 600px;
 }
 
 .scoreboard {
     border: 5px solid rgb(0, 0, 0);
-    display:flex;
+    
 }
 
 .intro {
-    display: flex;
+    
 }
 
 body {
     background-color:	#F6CF57; /*Pikachu Yellow ;)*/
     font-family: 'Roboto', sans-serif;
-    display:flex;
+    
 }
 
 .pokemon-choices {
