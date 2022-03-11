@@ -13,37 +13,69 @@ h1 {
 }
 
 .header {
-   margin-right: 40px; 
+   margin-bottom: 40px; 
 }
 
 .pokeball-header {
-    margin-top: 50px;
-    margin-left: 600px;
+    display:flex;
+    justify-content: center;
 }
 
 .scoreboard {
     border: 5px solid rgb(0, 0, 0);
-    
+    display: flex;
 }
 
-/*.intro {
-    
+.display {
+    display: flex;
+    justify-content: center;
 }
-*/
+
+.intro {
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.intro p{
+    text-indent: 30px;
+}
+
+#p1{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
 body {
-    background-color:	#F6CF57; /*Pikachu Yellow ;)*/
+    background-color:	rgb(246, 207, 87); /*Pikachu Yellow ;)*/
     font-family: 'Roboto', sans-serif;
     
 }
 
-.pokemon-choices {
-    display: flex;
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.starters button {
+    width: 95px;
+    background: rgb(211, 191, 80);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-top: 50px; 
+    margin-left: 100px;
+    margin-bottom: 70px;
 }
 
 .starters {
     display: flex;
+    justify-content: space-evenly;
 }
 
+/*
 .btns {
     display:flex ;
     width: 95px;
@@ -55,6 +87,7 @@ body {
     font-weight: bold;
     margin-top: 50px;
 }
+*/
 
 .main-title {
     display:flex;
@@ -66,14 +99,16 @@ body {
 
 #grass {
     display:flex;
+    padding-left: 15px;
 }
 
 #water {
     display:flex;
+    padding-left: 20px;
     
 }
 
 img {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
 }
