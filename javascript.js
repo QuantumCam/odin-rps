@@ -1,11 +1,18 @@
+/*
 const fire = document.getElementById('fire'); //rock
 const grass = document.getElementById('grass'); //paper
 const water = document.getElementById('water'); //scissors
+*/
+
+
+function myTest() {
+    document.getElementById("test").innerHTML = "This is a test!";
+}
 
 let playerScore = 0;
 let computerScore = 0;
 
-const buttons = document.querySelectorAll('.pokemon-starters') 
+const buttons = document.querySelectorAll('.pokemon-starters') //puts these buttons in an array
 console.log(buttons);
 
 
