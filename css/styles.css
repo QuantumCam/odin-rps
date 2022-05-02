@@ -75,19 +75,6 @@ h2 {
     justify-content: space-evenly;
 }
 
-/*
-.btns {
-    display:flex ;
-    width: 95px;
-    background: rgb(0, 183, 255);
-    border: none;
-    padding: 10px;
-    border-radius: 3px;
-    color: white;
-    font-weight: bold;
-    margin-top: 50px;
-}
-*/
 
 .main-title {
     display:flex;
