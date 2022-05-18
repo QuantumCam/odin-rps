@@ -22,6 +22,38 @@ water.addEventListener('click', function(e) {
     console.log('water');
 })
 
+/// This is where we will test out DOM
+
+const fireTest = document.getElementById('fire');
+fireTest.addEventListener('click', myFire);
+
+function myFire() {
+ document.getElementById('fireDemo').innerHTML = 'You chose Charmander, a fire type pokémon!';
+}
+
+const waterTest = document.getElementById('water');
+waterTest.addEventListener('click', myWater);
+
+function myWater() {
+    document.getElementById('waterDemo').innerHTML = 'You chose Squirtle, a water type pokémon!';
+}
+
+function myGrass() {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+////
 
  // let playerSelection = ['fire', 'grass', 'water'];
 
