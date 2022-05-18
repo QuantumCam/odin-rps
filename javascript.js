@@ -28,18 +28,21 @@ const fireTest = document.getElementById('fire');
 fireTest.addEventListener('click', myFire);
 
 function myFire() {
- document.getElementById('fireDemo').innerHTML = 'You chose Charmander, a fire type pokémon!';
+    document.getElementById('fireDemo').innerHTML = 'You chose Charmander, a fire-type pokémon!';
 }
 
 const waterTest = document.getElementById('water');
 waterTest.addEventListener('click', myWater);
 
 function myWater() {
-    document.getElementById('waterDemo').innerHTML = 'You chose Squirtle, a water type pokémon!';
+    document.getElementById('waterDemo').innerHTML = 'You chose Squirtle, a water-type pokémon!';
 }
 
-function myGrass() {
+const grassTest = document.getElementById('grass');
+grassTest.addEventListener('click', myGrass);
 
+function myGrass() {
+    document.getElementById('grassDemo').innerHTML = 'You chose Bulbasaur, a grass-type pokémon!';
 }
 
 
