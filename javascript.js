@@ -5,8 +5,6 @@ function myTest() {
 let playerScore = 0;
 let computerScore = 0;
 
-const buttons = document.querySelectorAll('.pokemon-starters') //puts these buttons in an array
-console.log(buttons);
 
 
 fire.addEventListener('click', function(e) {
@@ -22,41 +20,24 @@ water.addEventListener('click', function(e) {
     console.log('water');
 })
 
-/// This is where we will test out DOM
 
 const fireTest = document.getElementById('fire');
 fireTest.addEventListener('click', myFire);
-
 function myFire() {
     document.getElementById('fireDemo').innerHTML = 'You chose Charmander, a fire-type pokémon!';
 }
 
 const waterTest = document.getElementById('water');
 waterTest.addEventListener('click', myWater);
-
 function myWater() {
     document.getElementById('waterDemo').innerHTML = 'You chose Squirtle, a water-type pokémon!';
 }
 
 const grassTest = document.getElementById('grass');
 grassTest.addEventListener('click', myGrass);
-
 function myGrass() {
     document.getElementById('grassDemo').innerHTML = 'You chose Bulbasaur, a grass-type pokémon!';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-////
 
  // let playerSelection = ['fire', 'grass', 'water'];
 
@@ -66,6 +47,8 @@ function computerPlay () {
     let choices = options[Math.floor(Math.random() * options.length)];
     return choices;
 }
+
+const computerSelection = computerPlay();
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
@@ -85,9 +68,9 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-let playerSelection = 'fire';
-let computerSelection = computerPlay();
-const areEqual = playerSelection.toLowerCase() === computerSelection.toLowerCase(); //Should make them case insensitive
-console.log(areEqual);
+/* const playerSelection =
+
+*/
+
 
 
