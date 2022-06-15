@@ -70,24 +70,31 @@ h2 {
     margin-bottom: 70px;
 }
 
+.reset button {
+    width: 95px;
+    background: rgb(211, 191, 80);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-top: 50px; 
+    margin-left: 0px;
+    margin-bottom: 70px;
+}
+
 .starters {
     display: flex;
     justify-content: space-evenly;
 }
 
-/*
-.btns {
-    display:flex ;
-    width: 95px;
-    background: rgb(0, 183, 255);
-    border: none;
-    padding: 10px;
-    border-radius: 3px;
-    color: white;
-    font-weight: bold;
-    margin-top: 50px;
+.reset {
+    display:flex;
+    justify-content: space-evenly;
 }
-*/
+
+.return {
+    display: flex;
+}
 
 .main-title {
     display:flex;
