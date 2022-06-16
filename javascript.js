@@ -6,10 +6,16 @@ let playerScore = 0;
 let computerScore = 0;
 
 
-
+/*
 fire.addEventListener('click', function(e) {
     console.log('fire');
 })
+*/
+
+document.getElementById('fire').addEventListener('click', playRound()); {
+    alert('Hello bitch!');
+};
+
 
 
 grass.addEventListener('click', function(e) {
@@ -39,35 +45,34 @@ function myGrass() {
     document.getElementById('grassDemo').innerHTML = 'You chose Bulbasaur, a grass-type pokémon!';
 }
 
- // let playerSelection = ['fire', 'grass', 'water'];
 
-
+let options = ['fire', 'grass', 'water'];
 function computerPlay () {
-    let options = ['fire', 'grass', 'water'];
     let choices = options[Math.floor(Math.random() * options.length)];
     return choices;
 }
 
-const computerSelection = computerPlay();
-
-function playRound(playerSelection, computerSelection) {
-    if (playerSelection == computerSelection) {
-        return 'Try again! You and your can\'t pick the same pokémon.';
-    } else if (playerSelection == 'fire' && computerSelection == 'water') {
-        return '1 point for your rival! Water beats fire!';
-    } else if (playerSelection == 'fire' && computerSelection == 'grass') {
-        return '1 point for you! Fire beats grass!';
-    } else if (playerSelection == 'grass' && computerSelection == 'fire') {
-        return '1 point for your rival! Fire beats grass!';
-    } else if (playerSelection == 'grass' && computerSelection == 'water') {
-        return '1 point for you! Grass beats water!';
-    } else if (playerSelection == 'water' && computerSelection == 'grass') {
-        return '1 point for your rival! Grass beats water';
-    } else if (playerSelection == 'water' && computerSelection == 'fire') {
-        return '1 point for you! Water beats fire!';
-    }
+function playerPlay () {
+    let options = ['fire', 'grass', 'water']
 }
 
-/* const playerSelection =
 
-*/
+function playRound(playerPlay) {
+    const computerSelection = computerPlay();
+    const playerSelection = playerPlay();
+    if (playerSelection == computerSelection) {
+        console.log ('Try again! You and your can\'t pick the same pokémon.');
+    } else if (playerSelection == 'fire' && computerSelection == 'water') {
+        console.log ('1 point for your rival! Water beats fire!');
+    } else if (playerSelection == 'fire' && computerSelection == 'grass') {
+        console.log ('1 point for you! Fire beats grass!');
+    } else if (playerSelection == 'grass' && computerSelection == 'fire') {
+        console.log ('1 point for your rival! Fire beats grass!');
+    } else if (playerSelection == 'grass' && computerSelection == 'water') {
+        console.log ('1 point for you! Grass beats water!');
+    } else if (playerSelection == 'water' && computerSelection == 'grass') {
+        console.log ('1 point for your rival! Grass beats water');
+    } else if (playerSelection == 'water' && computerSelection == 'fire') {
+        console.log ('1 point for you! Water beats fire!');
+    }
+}
