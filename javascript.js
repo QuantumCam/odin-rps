@@ -12,9 +12,9 @@ fire.addEventListener('click', function(e) {
 })
 */
 
-document.getElementById('fire').addEventListener('click', playRound()); {
-    alert('Hello bitch!');
-};
+fire.addEventListener('click', function(e) {
+    console.log('fire`');
+})
 
 
 
@@ -63,16 +63,16 @@ function playRound(playerPlay) {
     if (playerSelection == computerSelection) {
         console.log ('Try again! You and your can\'t pick the same pokémon.');
     } else if (playerSelection == 'fire' && computerSelection == 'water') {
-        console.log ('1 point for your rival! Water beats fire!');
+        console.log ('1 point for your rival! Water extinguishes fire!');
     } else if (playerSelection == 'fire' && computerSelection == 'grass') {
-        console.log ('1 point for you! Fire beats grass!');
+        console.log ('1 point for you! Fire burns grass!');
     } else if (playerSelection == 'grass' && computerSelection == 'fire') {
-        console.log ('1 point for your rival! Fire beats grass!');
+        console.log ('1 point for your rival! Fire burns grass!');
     } else if (playerSelection == 'grass' && computerSelection == 'water') {
-        console.log ('1 point for you! Grass beats water!');
+        console.log ('1 point for you! Grass absorbs water!');
     } else if (playerSelection == 'water' && computerSelection == 'grass') {
-        console.log ('1 point for your rival! Grass beats water');
+        console.log ('1 point for your rival! Grass absorbs water');
     } else if (playerSelection == 'water' && computerSelection == 'fire') {
-        console.log ('1 point for you! Water beats fire!');
+        console.log ('1 point for you! Water extinguishes fire!');
     }
 }
